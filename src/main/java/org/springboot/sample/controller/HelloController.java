@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController   //知识点记录一：@RestController注解的使用
+@RestController
 @RequestMapping("/hello")
 public class HelloController {
-	@RequestMapping  //知识点记录二：@RequestMapping注解的默认路径
+	@RequestMapping
     public String hello() {
         return "Hello Spring-Boot";
     }
