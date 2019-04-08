@@ -8,6 +8,7 @@
   <name>spring-boot-section1-rumen Maven Webapp</name>
   <url>http://maven.apache.org</url>
   
+  <!-- 添加Spring Boot的父级依赖，这样当前的项目就是Spring Boot了 -->
   <parent>
      <groupId>org.springframework.boot</groupId>
      <artifactId>spring-boot-starter-parent</artifactId>
@@ -22,6 +23,7 @@
 
   
   <dependencies>
+    <!-- 添加Web支持-->
      <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -37,6 +39,7 @@
   <build>
     <finalName>spring-boot-section1-rumen</finalName>
     
+    <!-- 添加Spring Boot编译插件-->
     <plugins>
       	<plugin>
             <groupId>org.springframework.boot</groupId>
